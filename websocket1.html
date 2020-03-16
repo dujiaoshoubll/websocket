@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生websocket</title>
+    <script>
+        let ws = new WebSocket("ws:localhost:8080/");
+        // 建立连接
+        ws.open =function () {
+            alert("连接已建立");
+        }
+        // 发送回消息
+        ws.onmessage = function () {
+            
+        }
+        // 关闭连接
+        ws.onclose = function () {
+            
+        }
+        
+        // 连接报错
+        ws.onerror = function () {
+            
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
